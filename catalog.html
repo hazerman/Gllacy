@@ -44,8 +44,42 @@
 							</svg>
 							Вход
 						</a>
+						<div class="popup-login">
+							<form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+								<label class="visually-hidden" for="login-email">Введите логин(почту)</label>
+								<input type="email" name="login-email" id="login-email" placeholder="email@example.com">
+								<label for="login-password" class="visually-hidden">Введите пароль</label>
+								<input type="password" name="login-password" id="login-password" placeholder="••••••••">
+								<button class="btn" type="submit">Войти</button>
+							</form>
+							<ul class="add-links-list">
+								<li class="add-links-list-item"><a href="#">Забыли пароль?</a></li>
+								<li class="add-links-list-item"><a href="#">Новая регистрация</a></li>
+							</ul>
+						</div>
 					</li>
-					<li class="user-navigation-item"><a href="#">2 товара</a></li>
+					<li class="user-navigation-item">
+						<a href="#">2 товара</a>
+						<section class="popup-cart">
+							<h2 class="visually-hidden">Ваш заказ</h2>
+							<table class="order-table">
+								<tr>
+									<td class="order-table-image"></td>
+									<td class="order-table-heading">Пломбир с апельсиновым джемом</td>
+									<td class="order-table-mass">1,5 кг x <span class="order-table-price-per-mass">200 руб.</span></td>
+									<td class="order-table-price">300 руб.</td>
+								</tr>
+								<tr>
+										<td class="order-table-image"></td>
+										<td class="order-table-heading">Клубничный пломбир с присыпкой из белого шоколада</td>
+										<td class="order-table-mass">1,5 кг x <span class="order-table-price-per-mass">300 руб.</span></td>
+										<td class="order-table-price">450 руб.</td>
+									</tr>
+							</table>
+							<span class="total-price">750 руб.</span>
+							<button class="btn" type="button">Оформить заказ</button>
+						</section>
+					</li>
 				</ul>
 			</nav>
 			<div class="telephone-time-header">
@@ -86,31 +120,49 @@
 					</fieldset>
 					<fieldset class="filter-group filer-fatness">
 						<legend>Жирность:</legend>
-						<div class="fatness-wrapper">
-							<input class="visually-hidden" type="radio" name="fatness-radio" id="fat0" value="fatness0">
-							<label for="fat0">0%</label>
-							<input class="visually-hidden" type="radio" name="fatness-radio" id="fat10" value="fatness10" checked>
-							<label for="fat10">до 10%</label>
-							<input class="visually-hidden" type="radio" name="fatness-radio" id="fat30" value="fatness30">
-							<label for="fat30">до 30%</label>
-							<input class="visually-hidden" type="radio" name="fatness-radio" id="fat30+" value="fatness30+">
-							<label for="fat30+">выше 30%</label>
-						</div>
+						<ul class="fatness-list">
+							<li class="fatness-list-item">
+									<input class="visually-hidden" type="radio" name="fatness-radio" id="fat0" value="fatness0">
+									<label for="fat0">0%</label>
+							</li>
+							<li class="fatness-list-item">
+									<input class="visually-hidden" type="radio" name="fatness-radio" id="fat10" value="fatness10" checked>
+									<label for="fat10">до 10%</label>
+							</li>
+							<li class="fatness-list-item">
+									<input class="visually-hidden" type="radio" name="fatness-radio" id="fat30" value="fatness30">
+									<label for="fat30">до 30%</label>
+							</li>
+							<li class="fatness-list-item">
+									<input class="visually-hidden" type="radio" name="fatness-radio" id="fat30+" value="fatness30+">
+									<label for="fat30+">выше 30%</label>
+							</li>
+						</ul>
 					</fieldset>
 					<fieldset class="filter-group">
 						<legend>Наполнители:</legend>
-						<div class="topping-wrapper">
-							<input class="visually-hidden" type="checkbox" name="topping-choko" id="topping-choko" checked>
-							<label for="topping-choko">шоколадные</label>
-							<input class="visually-hidden" type="checkbox" name="topping-sugar" id="topping-sugar" checked>
-							<label for="topping-sugar">сахарные присыпки</label>
-							<input class="visually-hidden" type="checkbox" name="topping-fruits" id="topping-fruits">
-							<label for="topping-fruits">фрукты</label>
-							<input class="visually-hidden" type="checkbox" name="topping-syrup" id="topping-syrup">
-							<label for="topping-syrup">сиропы</label>
-							<input class="visually-hidden" type="checkbox" name="topping-jam" id="topping-jam">
-							<label for="topping-jam">джемы</label>
-						</div>
+						<ul class="topping-list">
+							<li class="topping-list-item">
+									<input class="visually-hidden" type="checkbox" name="topping-choko" id="topping-choko" checked>
+									<label for="topping-choko">шоколадные</label>
+							</li>
+							<li class="topping-list-item">
+									<input class="visually-hidden" type="checkbox" name="topping-sugar" id="topping-sugar" checked>
+									<label for="topping-sugar">сахарные присыпки</label>
+							</li>
+							<li class="topping-list-item">
+									<input class="visually-hidden" type="checkbox" name="topping-fruits" id="topping-fruits">
+									<label for="topping-fruits">фрукты</label>
+							</li>
+							<li class="topping-list-item">
+									<input class="visually-hidden" type="checkbox" name="topping-syrup" id="topping-syrup">
+									<label for="topping-syrup">сиропы</label>
+							</li>
+							<li class="topping-list-item">
+									<input class="visually-hidden" type="checkbox" name="topping-jam" id="topping-jam">
+									<label for="topping-jam">джемы</label>
+							</li>
+						</ul>
 					</fieldset>
 					<button class="send-btn" type="submit">Применить</button>
 				</form>
