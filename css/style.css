@@ -6,6 +6,10 @@ body {
 	background-color: #849d8f;
 }
 
+.inner-page {
+	color: #ffffff;
+}
+
 .visually-hidden {
 	position: absolute;
 
@@ -41,9 +45,9 @@ body {
 	list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-item>a {
 	color: #ffffff;
-	text-decoration: none;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
 .site-navigation-2nd-nesting {
@@ -59,6 +63,7 @@ body {
 
 .site-navigation-2nd-nesting a {
 	color: #323232;
+	text-decoration: none;
 }
 
 .main-search,
@@ -115,12 +120,66 @@ body {
 	line-height: 24px;
 }
 
+.breadcrumb-list {
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+	line-height: 16px;
+
+	list-style: none;
+}
+
+.breadcrumb-list a {
+	color: #ffffff;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.page-heading {
+	margin: 0;
+	padding: 0;
+
+	font-size: 35px;
+	line-height: 41px;
+}
+
 .promo-slider-wrapper h3 {
 	margin: 0;
 	padding: 0;
 
 	font-size: 60px;
 	line-height: 60px;
+	color: #ffffff;
+}
+
+.filters-form fieldset {
+	border: none;
+}
+
+.filter-group legend {
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.filter-group ul {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+
+	list-style: none;
+}
+
+.send-btn {
+	font-size: 16px;
+	line-height: 18px;
 	color: #ffffff;
 }
 
@@ -173,6 +232,7 @@ body {
 	line-height: 22px;
 	color: #ffffff;
 	text-decoration: underline;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
 .price {
@@ -284,6 +344,114 @@ p.telephone-map {
 	
 }
 
+.pagination-list {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+
+	list-style: none;
+}
+
+.pagination-list a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.social-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.social-list-item a {
+	display: block;
+	width: 32px;
+	height: 32px;
+
+	background-repeat: no-repeat;
+	border: 3px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	opacity: 0.8;
+}
+
+.social-tw a {
+	background-image: url('../img/icon-social-tw.svg');
+}
+
+.social-in a {
+	background-image: url('../img/icon-social-in.svg');
+}
+
+.social-fb a {
+	background-image: url('../img/icon-social-fb.svg');
+}
+
+.social-vk a {
+	background-image: url('../img/icon-social-vk.svg');
+}
+
+.tech-info-list {
+	margin: 0;
+	padding: 0;
+
+	font-size: 13px;
+	line-height: 18px;
+
+	list-style: none;
+}
+
+.tech-info-list-item:first-child {
+	font-weight: 700;
+}
+
+.tech-info-list a {
+	color: #ffffff;
+	text-decoration: none;
+
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sponsor {
+	font-size: 12px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.sponsor p {
+	margin: 0;
+	padding: 0;
+}
+
+.sponsor a {
+	color: #ffffff;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.popup-write-us {
+	background-color: #f8f7f4;
+}
+
+.popup-write-us p {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	color: #323232;
+}
+
+.write-us-form input,
+.write-us-form textarea {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* Для теста без интернета
 @font-face {
 	font-family: 'Roboto';
 	src: url('../fonts/Roboto/RobotoRegular.woff2') format('woff2');
@@ -303,4 +471,4 @@ p.telephone-map {
 	src: url('../fonts/Roboto/RobotoBold.woff2') format('woff2');
 	font-weight: 700;
 	font-style: normal;
-}
+} */
