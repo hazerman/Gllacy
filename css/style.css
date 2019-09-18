@@ -2,4 +2,305 @@ body {
 	margin: 0;
 
 	font-family: 'Roboto', 'Arial', 'Helvetica', 'Arial Narrow', sans-serif;
+
+	background-color: #849d8f;
+}
+
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	-webkit-clip-path: inset(100%);
+
+					clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.btn {
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.site-navigation-2nd-nesting {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+
+	list-style: none;
+}
+
+.site-navigation-2nd-nesting a {
+	color: #323232;
+}
+
+.main-search,
+.login-form input,
+.add-links-list {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.user-navigation {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.user-navigation a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.add-links-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.add-links-list a {
+	color: #323232;
+	text-decoration: underline;
+}
+
+.telephone-time-header {
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.telephone-time-header p {
+	margin: 0;
+	padding: 0;
+}
+
+.time-header {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.telephone-header {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.promo-slider-wrapper h3 {
+	margin: 0;
+	padding: 0;
+
+	font-size: 60px;
+	line-height: 60px;
+	color: #ffffff;
+}
+
+.free-toppings {
+	color: #ffffff;
+}
+
+.topping-raps {
+	background-color: #a81343;
+	background-image: url('../img/bg-raps.jpg');
+	background-repeat: no-repeat;
+}
+
+.topping-chok {
+	background-color: #522c16;
+	background-image: url('../img/bg-chok.jpg');
+	background-repeat: no-repeat;
+}
+
+.free-toppings h2 {
+	margin: 0;
+	padding: 0;
+
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.free-toppings p {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.goods-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.goods-list-item h3 {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.price {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 45px;
+	color: #ffffff;
+}
+
+.features {
+	color: #323232;
+
+	background-color: #f2e7d1;
+	background-image: url('../img/bg-waffel.jpg');
+}
+
+.features>p {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.features-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.features-list p {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.blog-article {
+	color: #323232;
+
+	background-color: #ffffff;
+	background-image: url('../img/bg-article-raps.jpg');
+}
+
+.blog-article-heading {
+	margin: 0;
+	padding: 0;
+
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.blog-article-heading a {
+	color: #323232;
+	text-decoration: none;
+}
+
+.blog-article p,
+.mailing p {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.mailing {
+	background-color: #f8f7f4;
+}
+
+.mailing p {
+	font-weight: 400;
+	color: #5a5a5a;
+}
+
+.mailing-form input {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.shop-address {
+	color: #323232;
+}
+
+.shop-address p {
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+	line-height: 20px;
+}
+
+p.telephone-map {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.shop-address address {
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 24px;
+	
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/RobotoRegular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/RobotoMedium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/RobotoBold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
 }
