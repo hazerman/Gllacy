@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="inner-page">
-	<header class="main-header">
-		<div class="w-container">
+	<div class="w-container">
+		<header class="main-header">
 			<a class="header-logo" href="index.html">
 				<img src="img/main-logo.svg" width="154" height="64" alt="Логотип Gllacy">
 			</a>
@@ -30,7 +30,7 @@
 					<li class="site-navigation-item"><a href="#">О Компании</a></li>
 				</ul>
 				<form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-					<label for="inpt-search">
+					<label class="search-form-label" for="inpt-search">
 						<span class="visually-hidden">Поиск</span>
 						<svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17">
 							<path fill="#ffffff" d="M16.96 15.53l-5.21-5.21a6.5 6.5 0 1 0-1.41 1.42l5.2 5.2 1.42-1.41zM6.5 11a4.5 4.5 0 1 1 .01-9.01A4.5 4.5 0 0 1 6.5 11z"/>
@@ -38,10 +38,10 @@
 					</label>
 					<input class="main-search" type="search" name="inpt-search" id="inpt-search" placeholder="Крем-брюле">
 				</form>
-				<ul class="user-navigation user-nav-cart-not-empty">
+				<ul class="user-navigation">
 					<li class="user-navigation-item">
 						<a href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="19">
+							<svg class="login-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="19">
 								<g fill="#ffffff"><path d="M6 14.88l6.92-5.38L6 4.12v2.92H-.04v4.92H6z"/>
 									<path d="M18 0H5a2 2 0 0 0-2 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
 								</g>
@@ -90,10 +90,8 @@
 				<p class="time-header">С 10 до 20, ежедневно</p>
 				<p class="telephone-header">8 812 450-25-25</p>
 			</div>
-		</div>
-	</header>
-	<main>
-		<div class="w-container">
+		</header>
+		<main>
 			<ul class="breadcrumb-list">
 				<li class="breadcrumb-list-item"><a href="index.html">Главная</a></li>
 				<li class="breadcrumb-list-item"><a href="">Каталог</a></li>
@@ -257,10 +255,8 @@
 					<li class="pagination-list-item"><a href="#"><span class="visually-hidden">Вперед</span></a></li>
 				</ul>
 			</section>
-		</div>
-	</main>
-	<footer class="main-footer">
-		<div class="w-container">
+		</main>
+		<footer class="main-footer">
 			<ul class="social-list">
 				<li class="social-list-item social-tw"><a href="#"><span class="visually-hidden">Твитер</span></a></li>
 				<li class="social-list-item social-in"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
@@ -277,7 +273,7 @@
 				<img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип HTML Academy">
 				<p>Сделано в <a class="academy-link" href="#">HTML Academy</a> &copy; 2019</p>
 			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 </body>
 </html>
