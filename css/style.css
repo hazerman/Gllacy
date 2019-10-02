@@ -59,7 +59,7 @@ body {
 .btn {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 23px 15px;
+	padding: 15px 23px;
 
 	font-weight: 700;
 	color: #ffffff;
@@ -351,9 +351,12 @@ a.current-in-catalog:active {
 
 .telephone-time-header {
 	position: absolute;
-	display: none;
+	top: 100%;
+	right: 0;
+
 	font-weight: 700;
 	color: #ffffff;
+	text-align: right;
 }
 
 .telephone-time-header p {
@@ -394,13 +397,46 @@ a.current-in-catalog:active {
 	line-height: 41px;
 }
 
-.promo-slider-wrapper h3 {
+.promo-slider-wrapper {
+	position: relative;
+	z-index: 2;
+	margin-top: -78px;
+	margin-bottom: -210px;
+}
+
+.promo-slides {
+	position: relative;
+
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
+
+.promo-slides h3 {
+	position: absolute;
+
 	margin: 0;
+	margin-top: 395px;
 	padding: 0;
+	max-width: 670px;
 
 	font-size: 60px;
 	line-height: 60px;
 	color: #ffffff;
+	text-align: center;
+}
+
+.promo-slides .btn {
+	position: absolute;
+
+	margin-top: 545px;
+
+	font-size: 32px;
+	line-height: 44px;
+}
+
+.show-promo-slide {
+	display: flex;
 }
 
 .filters-form fieldset {
@@ -434,8 +470,24 @@ a.current-in-catalog:active {
 	color: #ffffff;
 }
 
+.toppings-wrapper {
+	position: relative;
+	z-index: 3;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 .free-toppings {
+	display: flex;
+	flex-direction: column;
+	width: 560px;
+	padding: 21px 20px 23px 20px;
+
 	color: #ffffff;
+
+	border-radius: 12px;
 }
 
 .topping-raps {
@@ -452,6 +504,7 @@ a.current-in-catalog:active {
 
 .free-toppings h2 {
 	margin: 0;
+	margin-bottom: 23px;
 	padding: 0;
 
 	font-size: 35px;
@@ -460,11 +513,16 @@ a.current-in-catalog:active {
 
 .free-toppings p {
 	margin: 0;
+	margin-bottom: 45px;
 	padding: 0;
 
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 22px;
+}
+
+.free-toppings .btn {
+	align-self: flex-end;
 }
 
 .goods-list {
@@ -474,16 +532,24 @@ a.current-in-catalog:active {
 	list-style: none;
 }
 
-.goods-list-item h3 {
+.goods-list-heading {
 	margin: 0;
 	padding: 0;
 
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
+}
+
+.goods-list-heading a {
 	color: #ffffff;
-	text-decoration: underline;
-	text-decoration-color: rgba(255, 255, 255, 0.2);
+	text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+.goods-list-heading a:hover,
+.goods-list-heading a:active {
+	color: #ffbc9e;
+	text-decoration-color: rgba(259, 172, 159, 0.3);
 }
 
 .price {
@@ -708,6 +774,16 @@ p.telephone-map {
 .write-us-form textarea {
 	font-size: 16px;
 	line-height: 24px;
+}
+
+.z-index-header {
+	position: relative;
+	z-index: 20;
+}
+
+.z-index-main {
+	position: relative;
+	z-index: 10;
 }
 
 /* Для теста без интернета
