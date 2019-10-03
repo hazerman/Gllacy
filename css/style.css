@@ -821,12 +821,31 @@ p.telephone-map {
 	text-decoration: none;
 }
 
+.map-and-address {
+	position: relative;
+
+	width: 100%;
+}
+
+.static-map-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.map-and-address .w-container {
+	position: absolute;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .main-footer {
 	padding-top: 18px;
 	padding-bottom: 25px;
 }
 
-.main-footer .w-container {
+.main-footer .w-container,
+.catalog-footer {
 	display: flex;
 	align-items: flex-end;
 }
