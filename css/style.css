@@ -783,28 +783,6 @@ a.current-in-catalog:active {
 	color: #323232;
 }
 
-.shop-address p {
-	margin: 0;
-	padding: 0;
-
-	font-size: 14px;
-	line-height: 20px;
-}
-
-p.telephone-map {
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 22px;
-}
-
-.shop-address address {
-	font-weight: 700;
-	font-style: normal;
-	font-size: 18px;
-	line-height: 24px;
-	
-}
-
 .pagination-list {
 	margin: 0;
 	padding: 0;
@@ -834,9 +812,49 @@ p.telephone-map {
 
 .map-and-address .w-container {
 	position: absolute;
-	top: 0;
-	margin-left: auto;
-	margin-right: auto;
+	top: 63px;
+	left: 0;
+	right: 0;
+
+	display: flex;
+	justify-content: flex-end;
+}
+
+.shop-address {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 25px;
+	width: 302px;
+
+	background-color: #ffffff;
+	border-radius: 12px;
+}
+
+.shop-address p {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+
+	font-size: 14px;
+	line-height: 20px;
+}
+
+p.telephone-map {
+	margin-bottom: 5px;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.shop-address address {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 24px;	
 }
 
 .main-footer {
@@ -976,11 +994,27 @@ p.telephone-map {
 }
 
 .popup-write-us {
+	position: fixed;
+	top: 235px;
+	left: 50%;
+	z-index: 200;
+
+	display: none;
+	width: 478px;
+	margin-left: -239px;
+	padding: 20px 25px;
+
 	background-color: #f8f7f4;
+	border-radius: 12px;
+}
+
+.show-popup-write-us {
+	display: block;
 }
 
 .popup-write-us p {
 	margin: 0;
+	margin-bottom: 23px;
 	padding: 0;
 
 	font-weight: 500;
@@ -989,10 +1023,74 @@ p.telephone-map {
 	color: #323232;
 }
 
+.write-us-form {
+	display: flex;
+	flex-direction: column;
+}
+
 .write-us-form input,
 .write-us-form textarea {
+	margin-bottom: 20px;
+	padding: 12px 14px;
+
 	font-size: 16px;
 	line-height: 24px;
+
+	border: 1px solid #d3d3d2;
+	border-radius: 4px;
+}
+
+.write-us-form input {
+	max-width: 267px;
+}
+
+.write-us-form textarea {
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 155px;
+}
+
+.write-us-form .btn {
+	align-self: flex-end;
+}
+
+.close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 22px;
+	height: 22px;
+
+	border: none;
+	background-color: transparent;
+
+	cursor: pointer;
+}
+
+.close-btn::before,
+.close-btn::after {
+	content: '';
+
+	position: absolute;
+	top: 10px;
+	left: 0;
+
+	width: 22px;
+	height: 2px;
+
+	background-color: #231f20;
+}
+
+.close-btn::before {
+	transform: rotate(45deg);
+}
+
+.close-btn::after {
+	transform: rotate(-45deg);
 }
 
 .z-index-header {
