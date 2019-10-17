@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/normalize.mini.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="body-slider-color-1">
+<body class="index-body body-slider-color-0">
 	<div class="w-container z-index-header">
 		<header class="main-header">
 			<div class="header-logo">
@@ -29,7 +29,7 @@
 					<li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
 					<li class="site-navigation-item"><a href="#">О Компании</a></li>
 				</ul>
-				<form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+				<form class="search-form" action="https://echo.htmlacademy.ru" method="GET" tabindex="0">
 					<label class="search-form-label" for="inpt-search">
 						<span class="visually-hidden">Поиск</span>
 						<svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17">
@@ -173,6 +173,7 @@
 			<div class="static-map-wrapper">
 				<img src="img/map.png" width="1200" height="430" alt="Адрес магазина Gllacy: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
 			</div>
+			<iframe src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" width="100%" height="430" frameborder="1" allowfullscreen="true"></iframe>
 			<div class="w-container">
 				<div class="shop-address">
 					<p>Адрес главного офиса<br>и офлайн-магазина:</p>
@@ -180,7 +181,7 @@
 					<p>Для заказов по телефону:</p>
 					<p class="telephone-map">8 812 450-25-25</p>
 					<p>(с 10 до 20 ежедневно)</p>
-					<a class="btn" href="#">Форма обратной связи</a>
+					<a class="btn write-us-btn" href="#">Форма обратной связи</a>
 				</div>
 			</div>
 		</div>
@@ -220,5 +221,11 @@
 		</form>
 		<button class="close-btn" type="button"><span class="visually-hidden">Закрыть форму</span></button>
 	</section>
+
+	<div class="overlay"></div>
+
+	<script src="js/promo-slider-script.js"></script>
+	<script src="js/write-us-script.js"></script>
+	<script src="js/index-hover-script.js"></script>
 </body>
 </html>
